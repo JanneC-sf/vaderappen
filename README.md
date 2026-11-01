@@ -34,4 +34,10 @@ npm run build
 
 Resultatet hamnar i `dist/`. Eftersom `base` är satt till `./` fungerar appen även från en undermapp, till exempel på GitHub Pages.
 
+## GitHub Pages
+
+Appen publiceras automatiskt på https://jannec-sf.github.io/vaderappen/ vid varje push till `main`
+(se `.github/workflows/deploy.yml`). API-nyckeln hämtas från repots hemlighet `VITE_OPENWEATHER_API_KEY`
+under *Settings → Secrets and variables → Actions*.
+
 > Observera: i en Vite-app byggs nyckeln in i JavaScript-filerna och syns för alla som besöker sidan. Använd därför en gratisnyckel utan betalkoppling.
