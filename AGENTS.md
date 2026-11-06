@@ -53,3 +53,10 @@ Projektet har inga automatiska tester och ingen linter ännu. Testa därför man
 - Checka aldrig in `.env.local` eller en riktig API-nyckel. I GitHub Actions hämtas nyckeln från hemligheten `VITE_OPENWEATHER_API_KEY`.
 - Vite bygger in nyckeln i JavaScript-filerna, så den syns för alla besökare. Använd bara en gratisnyckel.
 - All text som användaren ser är på svenska. Felmeddelanden finns samlade i `src/api.js`.
+
+## Arbetssätt
+
+- Jobba alltid på en ny branch, aldrig direkt på main.
+- Kör testerna innan du öppnar en pull request. De ska gå igenom.
+  Finns inga tester än, kör minst `npm run build` och testa manuellt enligt avsnittet Testa.
+- När du är klar: pusha branchen och öppna en pull request med gh.
